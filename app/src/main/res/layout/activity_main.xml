@@ -7,12 +7,132 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/bem_vindo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Bem Vindo Dr.(a)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <EditText
+        android:id="@+id/senha_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/bt_logar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_login" />
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bem_vindo" />
+
+    <Button
+        android:id="@+id/bt_logar"
+        android:layout_width="206dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="200dp"
+        android:text="Logar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha_login" />
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/email_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bem_vindo"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="36dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_password"
+        app:layout_constraintEnd_toStartOf="@+id/email_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/img_password"
+        android:layout_width="36dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="339dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/senha_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_icon"
+        app:srcCompat="@drawable/password" />
+
+    <ImageView
+        android:id="@+id/img_coala"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/coala"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <ImageView
+        android:id="@+id/img_leao"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/leao"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <ImageView
+        android:id="@+id/img_esquilo"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/esquilo"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <ImageView
+        android:id="@+id/img_dog"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/dog"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="609dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
