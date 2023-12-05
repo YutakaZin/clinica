@@ -13,7 +13,25 @@
         android:theme="@style/Theme.Clinica"
         tools:targetApi="31">
         <activity
+            android:name="com.example.clinica.TelaPesquisaAnimal"
+            android:exported="false" />
+        <activity
+            android:name="com.example.clinica.TelaMenu"
+            android:exported="false" />
+        <activity
+            android:name="com.example.clinica.TelaNovaVacina"
+            android:exported="false" />
+        <activity
+            android:name=".TelaNovoCliente"
+            android:exported="false" />
+        <activity
+            android:name=".TelaNovoVeterinario"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TelaNovoAnimal"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

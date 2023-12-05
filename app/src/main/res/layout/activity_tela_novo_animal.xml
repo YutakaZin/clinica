@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TelaNovoAnimal">
+
+    <TextView
+        android:id="@+id/tx_novo_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Criar Novo Animal"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nome_novo_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/tx_novo_animal" />
+
+    <EditText
+        android:id="@+id/raca_novo_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Raca"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/idade_novo_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/informacao_novo_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Informacao"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bt_novo_login"
+        android:layout_width="206dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:text="Criar conta" />
+
+</LinearLayout>
