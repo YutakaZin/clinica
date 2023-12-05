@@ -8,6 +8,23 @@
     android:orientation="vertical"
     tools:context=".TelaNovoAnimal">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#63FF01F3"
+        android:elevation="4dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Voltar"
+            android:src="@drawable/arrow" />
+
+    </androidx.appcompat.widget.Toolbar>
+
     <TextView
         android:id="@+id/tx_novo_animal"
         android:layout_width="wrap_content"

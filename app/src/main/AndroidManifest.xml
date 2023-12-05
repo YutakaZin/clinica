@@ -13,13 +13,16 @@
         android:theme="@style/Theme.Clinica"
         tools:targetApi="31">
         <activity
-            android:name="com.example.clinica.TelaPesquisaAnimal"
+            android:name=".TelaPesquisaCliente"
             android:exported="false" />
         <activity
-            android:name="com.example.clinica.TelaMenu"
+            android:name=".TelaPesquisaAnimal"
             android:exported="false" />
         <activity
-            android:name="com.example.clinica.TelaNovaVacina"
+            android:name=".TelaMenu"
+            android:exported="false" />
+        <activity
+            android:name=".TelaNovaVacina"
             android:exported="false" />
         <activity
             android:name=".TelaNovoCliente"
